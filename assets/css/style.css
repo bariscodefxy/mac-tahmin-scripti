@@ -1,0 +1,7 @@
+.animation-text-1 {
+    user-select: none;
+}
+
+.animation-text-1:hover {
+    color: #aaa;
+}
