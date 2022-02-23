@@ -14,9 +14,28 @@
                         Maçlar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="<?= app_base ?>mac-tahminleri"
-                        style="white-space: nowrap;">Maç Tahminleri</a>
+                    <a class="nav-link" aria-current="page" href="<?= app_base ?>mac-tahminleri" style="white-space: nowrap;">Maç Tahminleri</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="<?= app_base ?>plani-degistir" style="white-space: nowrap;">Yükselt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="<?= app_base ?>profil" style="white-space: nowrap;">Profilim</a>
+                </li>
+                <?php if($this->getSessionManager()->has("login")): ?>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="<?= app_base ?>cikis-yap" style="white-space: nowrap;">Çıkış Yap</a>
+                </li>
+                <?php else: ?>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="<?= app_base ?>kayit-ol"
+                        style="white-space: nowrap;">Kayıt Ol</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="<?= app_base ?>giris-yap"
+                        style="white-space: nowrap;">Giriş Yap</a>
+                </li>
+                <?php endif; ?>
             </ul>
         </div>
     </section>

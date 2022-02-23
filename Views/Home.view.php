@@ -17,7 +17,7 @@
 <body>
     <?php
     
-    $pageManager = new PageManager();
+    $pageManager = new PageManager($db);
     $pageManager->loadHeader()->loadPage()->loadFooter(); // at first load header than load the page and last load footer
 
     ?>

@@ -18,3 +18,8 @@ function pageTitle($title){
     }
     return null;
 }
+
+function getToken(){
+    global $SessionManager;
+    return $SessionManager->get("token");
+}
